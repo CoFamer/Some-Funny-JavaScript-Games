@@ -1,0 +1,49 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-07-08 22:04:48
+ * @LastEditTime: 2020-07-09 19:38:20
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \识颜色\index.html
+--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找颜色~</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/外挂.css">
+</head>
+<body>
+    <!-- 首屏 -->
+    <div id="firstScreen">
+        <h3>找颜色</h3>
+        <p>找出所有色块里面颜色不同的那一个</p>
+        <button id="gameStart">开始游戏</button>
+    </div>
+    <!-- 游戏屏 -->
+    <div id="secondScreen">
+        <div class="score">得分：<span class="count">0</span></div>
+        <div id="game"></div>
+        <div class="timing"></div>
+        <button class="pause">暂停</button>
+    </div>
+    <!-- 暂停界面 -->
+    <div id="pauseScreen">
+        <h3>游戏暂停</h3>
+        <button class="continue">继续游戏</button>
+    </div>
+    <!-- 结束界面 -->
+    <div id="endScreen">
+        <p>您的分数为:<span class="endScore"></span>,经鉴定,您是:</p>
+        <h3 class="endLevel"></h3>
+        <button class="onceAgain">再来一次</button>
+    </div>
+    <div class="waigua">开始开挂</div>
+    <div class="tingzhi">停止外挂</div>
+    <script src="js/index.js"></script>
+    <script src="js/物理外挂最为致命.js"></script>
+</body>
+</html>

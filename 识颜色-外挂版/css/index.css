@@ -1,0 +1,208 @@
+/* 首屏内容 */
+#firstScreen{
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(240,96,96);
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+#firstScreen h3{
+    display: inline-block;
+    margin-top: 50px;
+    font-style: normal;
+    color: #fff;
+    font-size: 2em;
+}
+#firstScreen p{
+    margin-top: 50px;
+    color: #FFA1A1;
+}
+#firstScreen button{
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 150px;
+    background-color: rgb(252, 173, 38);
+    border-radius: 10px;
+    box-shadow: 0 5px #DA9622;
+    cursor: pointer;
+}
+
+/* 第二屏游戏屏 */
+#secondScreen{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240,96,96);
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+}
+#secondScreen div.score{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #FFA1A1;
+}
+#secondScreen div#game{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+    margin: auto;
+    background-color: #ddd;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    cursor: pointer;
+}
+#secondScreen div.timing{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 80px;
+    height: 50px;
+    background-color: #FD9090;
+    border-radius: 10px;
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+}
+#secondScreen button.pause{
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+    font-size: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 5px #DA9622;
+    background-color: rgb(252, 173, 38);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#secondScreen div#game span{
+    display: inline-block;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 5px solid #ddd;
+    /* 防止出边界 */
+    margin-bottom: -4px;   
+    border-radius: 10px; 
+    /* transition: background-color 1s linear; */
+}
+/* 暂停界面 */
+#pauseScreen{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(167,67,67);
+}
+#pauseScreen h3{
+    margin-top: 100px;
+    color: #FFE2C5;
+    font-size: 40px;
+    /* font-weight: normal; */
+}
+#pauseScreen button.continue{
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+    background-color: rgb(252, 173, 38);
+    border-radius: 10px;
+    box-shadow: 0 5px #DA9622;
+    cursor: pointer;
+}
+/* 结束屏 */
+#endScreen{
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: rgb(167,67,67);
+}
+#endScreen p{
+    display: block;
+    margin-top: 100px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 100px; */
+    font-size: 20px;
+    color: #fff;
+}
+#endScreen h3.endLevel{
+    margin-top: 10px;
+    color: #321;
+    font-size: 40px;
+}
+#endScreen button.onceAgain{
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+    color: #fff;
+    padding: 20px 50px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 200px;
+    background-color: rgb(252, 173, 38);
+    border-radius: 10px;
+    box-shadow: 0 5px #DA9622;
+    cursor: pointer;
+}
+/* 各等级 */
+.lv1 span{
+    width: 50%;
+    height: 50%;
+}
+.lv2 span{
+    width: 33.33%;
+    height: 33.33%;
+}
+.lv3 span{
+    width: 25%;
+    height: 25%;
+}
+.lv4 span{
+    width: 20%;
+    height: 20%;
+}
+.lv5 span{
+    width: 16.666%;
+    height: 16.666%;
+}
+.lv6 span{
+    width: 14.28%;
+    height: 14.28%;
+}
+.lv7 span{
+    width: 12.5%;
+    height: 12.5%;
+}
+.lv8 span{
+    width: 11.111%;
+    height: 11.111%;
+}

@@ -1,0 +1,89 @@
+#game{
+    width: 800px;
+    height: 600px;
+    border: 1px solid;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+p{
+    text-align: center;
+    font-stretch: 20px;
+}
+.sky{
+    width: 1600px;
+    height: 600px;
+    background: url(../img/sky.png);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.land{
+    width: 200%;
+    height: 112px;
+    background: url(../img/land.png);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.bird{
+    width: 33px;
+    height: 26px;
+    position: absolute;
+    left: 200px;
+    top: 150px;
+    background-image: url(../img/bird.png);
+}
+.pipeUp{
+    height: 180px;
+    width: 52px;
+    /* left、bottom-->设置图片以左下角优先显示 */
+    background: url(../img/pipeDown.png) left bottom;
+    position: absolute;
+    top:0;
+    right: -52px;
+}
+.pipeDown{
+    height: 180px;
+    width: 52px;
+    background: url(../img/pipeUp.png);
+    position: absolute;
+    /* land的像素高度 */
+    bottom: 112px;
+    right: -52px;
+}
+.defeat{
+    width: 100%;
+    height: 600px;
+    background: rgba(255,255,255,0.3);
+    font-size: 4em;
+    text-align: center;
+    line-height: 400px;
+    color:white;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.defeat .score{
+    left: 50%;
+    transform: translate(-50%);
+    display: block;
+    font-size: 40px;
+    position: absolute;
+    bottom: 90px;
+}
+.pause{
+    width: 100%;
+    height: 600px;
+    background: rgba(255,255,255,0.3);
+    font-size: 4em;
+    text-align: center;
+    line-height: 600px;
+    color:white;
+    display: none;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
