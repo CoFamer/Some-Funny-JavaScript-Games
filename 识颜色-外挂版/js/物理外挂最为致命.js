@@ -31,3 +31,5 @@ waigua.onclick = function(){
 tingzhi.onclick = function(){
     clearInterval(set);
 }
+
+// 测试sourceTree用、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、
